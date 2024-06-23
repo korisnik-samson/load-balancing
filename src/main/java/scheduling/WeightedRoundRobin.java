@@ -56,8 +56,8 @@ public class WeightedRoundRobin {
     }
 
     static class Server {
-        private String name;
-        private Integer weight;
+        private final String name;
+        private final Integer weight;
 
         public Server(String name, Integer weight) {
             this.name = name;
