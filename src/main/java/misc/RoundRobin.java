@@ -1,4 +1,4 @@
-package scheduling;
+package misc;
 
 public class RoundRobin {
     private static void findWaitingTime(Integer[] processes, Integer n, Integer[] bt, Integer[] wt, Integer quantum) {

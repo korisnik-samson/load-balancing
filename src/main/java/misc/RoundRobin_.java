@@ -1,4 +1,4 @@
-package scheduling;
+package misc;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class RoundRobin_ {
         ArrayList<Integer> rem_bt = new ArrayList<>(bt);
         System.arraycopy(bt.toArray(), 0, rem_bt.toArray(), 0, n);
 
-        int t = 0; // Current time
+        int t = 0; // Current time could be in milliseconds
 
         while (true) {
             boolean done = true;
