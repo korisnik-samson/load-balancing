@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class LeastResponseTimeLoadBalancer {
 
-    private Map<String, Long> serverResponseTimes;
+    private final Map<String, Long> serverResponseTimes;
 
     public LeastResponseTimeLoadBalancer() {
         this.serverResponseTimes = new HashMap<>();
