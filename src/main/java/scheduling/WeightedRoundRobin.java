@@ -1,9 +1,10 @@
 package scheduling;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 
 
 public class WeightedRoundRobin {
@@ -21,7 +22,7 @@ public class WeightedRoundRobin {
         this.random = new Random();
     }
 
-    private Integer[] calculateCumulativeWeights(List<Server> servers) {
+    private Integer @NotNull [] calculateCumulativeWeights(@NotNull List<Server> servers) {
         Integer[] cumulativeWeights = new Integer[servers.size()];
 
         cumulativeWeights[0] = servers.getFirst().getWeight();
